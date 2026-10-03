@@ -5,6 +5,23 @@
 отправку. Бот сохраняет заявку в SQLite и отправляет полную информацию
 администратору.
 
+## Демонстрация
+
+### Создание заявки
+
+<p align="center">
+  <img src="screenshots/01-start.png" width="250">
+  <img src="screenshots/02-form-cancel.png" width="250">
+  <img src="screenshots/03-confirmation.png" width="250">
+</p>
+
+### Уведомление администратора и статистика
+
+<p align="center">
+  <img src="screenshots/04-admin-notification.png" width="250">
+  <img src="screenshots/05-admin-panel.png" width="250">
+</p>
+
 ## Возможности
 
 - выбор услуги: «Консультация», «Ремонт» или «Другое»;
