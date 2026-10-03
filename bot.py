@@ -1,5 +1,6 @@
 import asyncio
 import logging
+import os
 
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
@@ -29,7 +30,8 @@ async def set_bot_commands(bot: Bot, admin_id: int) -> None:
 
 async def main() -> None:
     config = load_config()
-    database = Database("leads.db")
+    database_path = "/data/leads.db" if os.path.isdir("/data") else "leads.db"
+    database = Database(database_path)
     database.initialize()
 
     bot = Bot(
